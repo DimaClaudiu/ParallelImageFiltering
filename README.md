@@ -1,4 +1,4 @@
-# ParallelImageFiltering
+# Parallel Image Filtering
 Distributed colored and grayscale image filtering in C using MPI.
 
 #### - Project Status: [Completed]
