@@ -37,6 +37,7 @@ Average of 3 runs per test, 10 filters total (twice each).
 | 3 Cores  | 7.69  |    257% |
 | 4 Cores  | 6.373  |    326% |
 
+
 > 3853x2000 8bit grayscale image, 7.5MB size
 
 | Cores       | Time (s)      | CPU Usage |
@@ -53,7 +54,7 @@ The scalability is really good for more than one filter, and it just gets better
   Compile with `mpicc` and `-lm` flas.
   Run with command line arguments: `inputImage outputImage (smooth|blur|sharpen|mean|emboss)*`
   
-  `mpirun -np 4 imageProcessing baby-yoda.pnm baby-yoda-filtered.pnm smooth, blur, sharpen, mean, emboss`
+  `mpirun -np 4 imageProcessing baby-yoda.pnm baby-yoda-filtered.pnm smooth blur sharpen mean emboss`
 
 ## Completion Date
 2020, January 6
